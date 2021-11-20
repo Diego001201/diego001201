@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7af8d07ab3.js" crossorigin="anonymous"></script>
+    <title>Diego Service</title>
+</head>
+<body>
+
+    <div class="fejlec">
+        <img class="sticky" src="logo9.png" alt="">
+    </div>
+    
+    <nav>
+        <label for="mobilMenu" class="mobilMenuGomb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <input type="checkbox" id="mobilMenu">
+
+        <ul class="navigation">
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="arlista.html">Árak</a></li>
+            <li><a href="arajanlat.html">Árajánlat</a></li>
+            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <form id="arajnalt" action="" method="post">
+            <fieldset>
+                <legend><h2>Kérj árajánlatot</h2></legend>
+                <ol>
+                    <li>
+                        <label for="nev">Név:<em>*</em></label>
+                        <input id="nev" type="text">
+                    </li>
+                
+                    <li>
+                        <label for="email">Email cím:<em>*</em></label>
+                        <input id="email" type="email">
+                    </li>
+
+                    <li>
+                        <label for="telefonszam">Telefonszám:</label>
+                        <input id="telefonszam" type="tel">
+                    </li>
+
+                    <li>
+                        <label for="tipus">Készülék pontos típusa:</label>
+                        <input id="tipus" type="text">
+                    </li>
+
+                    <li>
+                        <label for="imei">IMEI szám / sorozatszám:</label>
+                        <input id="imei" type="text">
+                    </li>
+
+                    <li>
+                        <p>Hogyan szeretnéd eljuttatni a készüléked?</p>
+                        <input type="radio" name="valasz" id="atvetel1">
+                        <label for="atvetel1">Postai úton / Futárral</label>
+                        <br>
+                        <input type="radio" name="valasz" id="atvetel2">
+                        <label for="atvetel2">Személyesen</label>
+                    </li>
+                    <br>
+
+                    <li>
+                        <label for="leiras">Leírás:</label>
+                        <textarea name="leiras" id="leiras" cols="75" rows="10"></textarea>
+                    </li>
+                </ol>
+                <input type="submit" id="gomb" value="Küldés">
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
